@@ -87,3 +87,27 @@ nav ul li a:hover {
 nav ul li a:active {
   color: yellow;
 }
+
+.infobox {
+    float: right;
+    width: 250px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0 0 20px 20px;
+    font-size: 0.9em;
+  }
+  
+  .infobox h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+  
+  .infobox ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .infobox ul li {
+    margin-bottom: 10px;
+  }  
