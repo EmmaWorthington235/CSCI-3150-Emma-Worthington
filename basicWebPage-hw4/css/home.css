@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Serif:wght@700&family=Open+Sans&display=swap');
+
+
+body {
+  color: black;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Hide only visually, but have it available for screen readers: */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Noto Serif', serif;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+p {
+  line-height: 1.85em;
+  text-indent: 50px;
+  margin-bottom: 25px;
+}
+
+.no-bullet {
+  list-style: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  nav ul {
+    padding: 0;
+  }
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  /* font-family: 'Inconsolata', monospace; */
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav ul li a:link {
+  color: blue;
+}
+
+nav ul li a:visited {
+  color: purple;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+nav ul li a:active {
+  color: yellow;
+}
