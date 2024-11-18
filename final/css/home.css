@@ -3,7 +3,7 @@
 
 body {
   color: black;
-  background:lightblue;
+  /* background:lightblue; */
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -30,20 +30,24 @@ h1,
 h2,
 h3 {
   font-family: 'Noto Serif', serif;
+  font-family: 'Inconsolata', monospace;
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 2.8em;
+  font-family: 'Inconsolata', monospace;
 }
 
 h2 {
   font-size: 1.4em;
+  font-family: 'Inconsolata', monospace;
 }
 
 p {
   line-height: 1.85em;
   text-indent: 50px;
   margin-bottom: 25px;
+  font-family: 'Inconsolata', monospace;
 }
 
 .no-bullet {
@@ -51,29 +55,37 @@ p {
 }
 
 
-nav ul li {
+nav {
   list-style: none;
 }
 
-nav ul li a {
+nav a {
   font-family: 'Inconsolata', monospace;
   text-decoration: none;
   font-size: 1.8em;
+  text-decoration: underline;
+  margin-right: 20px;
 }
 
-nav ul li a:link {
-  color: white;
-}
-
-nav ul li a:visited {
-  color: white;
-}
-
-nav ul li a:hover {
+nav a:link {
   color: black;
-  background: white;
 }
 
-nav ul li a:active {
-  color: yellow;
+nav a:visited {
+  color: black;
+}
+
+nav a:hover {
+  /* color: black; */
+  /* background: pink; */
+  /* font-weight: bold; */
+}
+
+nav a:active {
+  /* color: yellow; */
+  font-weight: bold;
+}
+
+nav a.active {
+  font-weight: bold;
 }
