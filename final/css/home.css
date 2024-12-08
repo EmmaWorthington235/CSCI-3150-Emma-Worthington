@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Serif:wght@700&family=Open+Sans&display=swap');
 
-
 body {
-  color: black;
-  /* background:lightblue; */
+  color: #333;
+  background: #f9f9f9;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Hide only visually, but have it available for screen readers: */
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -19,73 +19,101 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-
 }
 
 .container {
   margin: 0 auto;
   max-width: 960px;
-}
-h1,
-h2,
-h3 {
-  font-family: 'Noto Serif', serif;
-  font-family: 'Inconsolata', monospace;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   font-size: 2.8em;
   font-family: 'Inconsolata', monospace;
+  background: #4a4a4a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
 }
 
 h2 {
-  font-size: 1.4em;
-  font-family: 'Inconsolata', monospace;
+  font-size: 1.8em;
+  font-family: 'Noto Serif', serif;
+  color: #4a4a4a;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+  border-left: 4px solid #6c5b7b;
+  padding-left: 10px;
 }
 
 p {
   line-height: 1.85em;
-  text-indent: 50px;
+  text-indent: 0;
   margin-bottom: 25px;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
 }
-
-.no-bullet {
-  list-style: none;
-}
-
 
 nav {
-  list-style: none;
+  background: #eeeeee;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 8px;
+  justify-content: center;
 }
 
 nav a {
   font-family: 'Inconsolata', monospace;
   text-decoration: none;
-  font-size: 1.8em;
-  text-decoration: underline;
-  margin-right: 20px;
-}
-
-nav a:link {
-  color: black;
-}
-
-nav a:visited {
-  color: black;
+  font-size: 1.2em;
+  color: #4a4a4a;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
 }
 
 nav a:hover {
-  /* color: black; */
-  /* background: pink; */
-  /* font-weight: bold; */
+  color: white;
+  background: #6c5b7b;
 }
 
 nav a:active {
-  /* color: yellow; */
   font-weight: bold;
 }
 
 nav a.active {
   font-weight: bold;
+  color: black;
+  background: plum;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background: #4a4a4a;
+  color: white;
+  border-radius: 8px;
+}
+
+footer address {
+  font-style: normal;
+}
+
+footer small {
+  font-size: 0.9em;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+a:focus {
+  outline: 2px solid #6c5b7b;
+  outline-offset: 4px;
 }
